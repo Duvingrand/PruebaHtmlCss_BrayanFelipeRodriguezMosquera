@@ -26,3 +26,101 @@ fecha: fecha del evaluacion de desempeño */
     font-family: 'Ubuntu';
 }
 
+a{
+    color: black;
+    text-decoration: 0;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+}
+
+.boton{
+    color: var(--blanco);
+    background-color: var(--azulClaro);
+    padding: 10px;
+    border-radius: 100px;
+    margin: 3px;
+    border: 0
+}
+
+img{
+    border-radius: 50px;
+}
+
+/* ---------------------------diseño del header -----------------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+.titulo img{
+    height: 30px;
+}
+
+.titulo{
+    display: flex;
+}
+
+.concolor{
+    color: var(--azulClaro)
+}
+
+/* -------------------diseño main-------------------- */
+
+main{
+    background-color: var(--blanco);
+    padding: 100px 20px;
+    justify-content: center;
+}
+
+.book{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    margin: 10px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.book img{
+    height: 600px;
+}
+
+.inputtext{
+    height: 40px;
+    width: 400px;
+    border-color: var(--azulClaro);
+}
+
+.binput{
+    padding: 15px 50px;
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;   
+}
+
+.thead th{
+    border-bottom:4px solid var(--azulClaro);
+}
+

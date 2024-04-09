@@ -27,8 +27,14 @@ fecha: fecha del evaluacion de desempeño
 
 <body>
     <header>
-
-        <img src="./public/images/Fondo-claro-logo.webp" alt="Logo de riwi">
+        <article class="titulo">
+            <img src="./public/icons/menor.webp" alt="">
+            <h1 class="concolor">T</h1>
+            <h1>rans</h1>
+            <h1 class="concolor">R</h1>
+            <h1>iwi</h1>
+            <img src="./public/icons/mayor.webp" alt="">
+        </article>
         <!-- barra de navegación -->
         <nav>
             <a href="">
@@ -60,28 +66,20 @@ fecha: fecha del evaluacion de desempeño
             <article>
 
                 <h2>Transportate desde cualquier lugar hacia tu centro de entrenamiento</h2>
+                <br>
                 <form action="#" method="post">
-                    <label for="ubicacion">ingresa tu ubicacion</label>
-                    <select name="ubicacion" id="ubicacion">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-
-                    </select>
-
+                    <input type="text" name="ubicacion" id="ubicacion" class="inputtext" placeholder="   Ingresa tu ubicacion">
                     <br>
-
+                    <br>
                     <label for="centroFormacion">selecciona tu centro de formación</label>
                     <select name="centroFormacion" id="centroFormacion">
                         <option value=""></option>
                         <option value=""></option>
                         <option value=""></option>
-
                     </select>
-
                     <br>
-
-                    <input type="submit" value="Enviar" class="boton">
+                    <br>
+                    <input type="submit" value= "Solicitar Vehiculo" class="boton binput" >
                 </form>
             </article>
 
@@ -93,7 +91,7 @@ fecha: fecha del evaluacion de desempeño
         </section>
         <!--------- segundo bloque de la pagina ------------------------------------------------>
         <section class="book">
-            
+
             <!-- lado izquierdo del segundo bloque -->
             <article class="imagen">
                 <img src="./public/images/conductora.webp" alt="conductora">
@@ -105,21 +103,22 @@ fecha: fecha del evaluacion de desempeño
                 <p>¡Unete hoy y abre las puertas a tus oportunidades financieras!</p>
             </article>
         </section>
-        
+
         <!--------- tercer bloque de la pagina ------------------------------------------------->
-        <section>
+        <section class="book">
             <!-- lado izquierdo del tercer bloque -->
-            <article>
+            <article class="tabla">
                 <h2>Viaja con amigos</h2>
-                <p>¡Viaja con amigos y crea recuerdos inolvidables! observa la lista de vehiculos disponibles en cada una de nuestras sedes</p>
+                <p>¡Viaja con amigos y crea recuerdos inolvidables! observa la lista de vehiculos disponibles en cada
+                    una de nuestras sedes</p>
 
                 <!-- tabla de vehiculos disponibles en cada sede -->
                 <table>
                     <thead>
-                        <tr>
-                            <th>Sede</th>
-                            <th>Vehiculos</th>
-                            <th>Motos</th>
+                        <tr class="thead">
+                            <th><i class="bi bi-buildings-fill"></i> Sede</th>
+                            <th><i class="bi bi-car-front-fill"></i> Vehiculos</th>
+                            <th><i class="bi bi-bicycle"></i> Motos</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -157,30 +156,81 @@ fecha: fecha del evaluacion de desempeño
             <h2>que necesito para ser un conductor Riwi?</h2>
             <img src="./public/images/conductores.webp" alt="conductores">
             <article>
+                <div>
                 <i class="bi bi-star-fill"></i>
                 <h4>Requisitos</h4>
                 <p>Ser mayor de 18 años</p>
                 <p>Verificación de antecedentes</p>
                 <p>Ser coder de riwi</p>
-            </article>
-            <article>
+            </div>
+            <div>
                 <i class="bi bi-file-earmark-text"></i>
                 <h4>Documentos</h4>
                 <p>Licencia de conducción vigente</p>
                 <p>SOAT vigente</p>
                 <p>Tarjeta de propiedad del vehiculo actual</p>
-            </article>
-            <article>
+            </div>
+            <div>
                 <i class="bi bi-calendar-check-fill"></i>
                 <h4>Empezar es muy facil</h4>
                 <p>Registrate</p>
                 <p>Sube tus documentos</p>
                 <p>Sal a manejar</p>
+            </div>
             </article>
         </section>
-
+        <!---------- quinto bloque de la pagina ----------------------------------------------->
+        <section>
+            <h2>Registrate cuando quieras</h2>
+            <form action="">
+                <input type="text" name="" id="">
+                <input type="email" name="" id="">
+                <input type="tel" name="" id="">
+                <label for=""></label>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <label for=""></label>
+                <select name="" id=""></select>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Registrate" class="boton">
+            </form>
+        </section>
+        <!------------ sexto bloque de la pagina --------------------------------------------->
+        <section>
+            <h2>Acerca de nosotros</h2>
+            <article>
+                <h4>¿quienes somos?</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=U1CpLIRrfGoSfSas"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+            <article>
+                <h4>¿Donde estamos ubicados?</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1389.3816920777483!2d-75.58446808765758!3d6.219035162811139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1712666947135!5m2!1ses-419!2sco"
+                    width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-twitter"></i>
+        </section>
+        <section>
+            <p>@ 2024 Riwi.io Todos los derechos reservados</p>
+        </section>
+    </footer>
 
 </body>
 
