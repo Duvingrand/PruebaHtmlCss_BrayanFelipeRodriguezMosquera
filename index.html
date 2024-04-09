@@ -5,57 +5,62 @@ fecha: fecha del evaluacion de desempeño
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="" />
-    <meta name="keywords" content="">
+    <meta name="description" content="Dirigete mas comodamente a s tu centro de entrenamiento" />
+    <meta name="keywords" content="Riwi, carro, transporte, entrenamiento, centro, conducir">
     <meta name="sitedomain" content="https://example.com/" />
     <meta name="organization" content="RIWI_DELL" />
-    <meta name="author" content="su nombre" />
-    <meta name="designer" content="su nombre" />
-    <meta name="copyright" content="© 2024 Riwi Cine. Todos los derechos reservados">
+    <meta name="author" content="Duvingrand" />
+    <meta name="designer" content="Duvingrand" />
+    <meta name="copyright" content="© 2024 TransRiwi. Todos los derechos reservados">
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
-    <title>Document</title>
+    <title>TransRiwi</title>
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <article class="titulo">
+        <section class="titulo">
             <img src="./public/icons/menor.webp" alt="">
-            <h1 class="concolor">T</h1>
-            <h1>rans</h1>
-            <h1 class="concolor">R</h1>
-            <h1>iwi</h1>
+            <h2 class="concolor">T</h2>
+            <h2>rans</h2>
+            <h2 class="concolor">R</h2>
+            <h2>iwi</h2>
             <img src="./public/icons/mayor.webp" alt="">
-        </article>
+        </section>
         <!-- barra de navegación -->
         <nav>
-            <a href="">
+            <a href="#need">
                 <li><i class="bi bi-card-checklist"></i> Requisitos</li>
             </a>
-            <a href="">
+            <a href="#acerca">
                 <li><i class="bi bi-geo-fill"></i> Acerca de Nosotros</li>
             </a>
-            <a href="">
+            <a href="mailto:formacion@riwi.io">
                 <li><i class="bi bi-envelope-fill"></i> Contactanos</li>
             </a>
-            <a href="">
+            <a href="tel:+301 732 53 27">
                 <li><i class="bi bi-telephone-fill"></i> Llamanos</li>
             </a>
             <a href="">
                 <li class="boton">Iniciar Sesión</li>
             </a>
-            <a href="">
+            <a href="#registro">
                 <li class="boton">Registrarte</li>
             </a>
         </nav>
+
+        <section class="whatsapp">
+            <a href="https://wa.me/+301 732 53 27"><img src="./public/icons/whatsapp.webp" alt=""></a>
+
+        </section>
     </header>
 
     <main>
@@ -68,24 +73,26 @@ fecha: fecha del evaluacion de desempeño
                 <h2>Transportate desde cualquier lugar hacia tu centro de entrenamiento</h2>
                 <br>
                 <form action="#" method="post">
-                    <input type="text" name="ubicacion" id="ubicacion" class="inputtext" placeholder="   Ingresa tu ubicacion">
+                    <input type="text" name="ubicacion" id="ubicacion" class="inputtext"
+                        placeholder="   Ingresa tu ubicacion">
                     <br>
                     <br>
-                    <label for="centroFormacion">selecciona tu centro de formación</label>
-                    <select name="centroFormacion" id="centroFormacion">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                    <select name="centroFormacion" id="centroFormacion" class="inputtext" required>
+                        <option value="">Selecciona tu centro de formación</option>
+                        <option value="">Medellin</option>
+                        <option value="">Bucaramanga</option>
+                        <option value="">Barranquilla</option>
+                        <option value="">Cali</option>
                     </select>
                     <br>
                     <br>
-                    <input type="submit" value= "Solicitar Vehiculo" class="boton binput" >
+                    <input type="submit" value="Solicitar Vehiculo" class="boton binput">
                 </form>
             </article>
 
             <!-- lado derecho del primer bloque -->
-            <article class="imagen">
-                <img src="./public/images/cuatro_pasajeros.webp" alt="imagen de referencia">
+            <article>
+                <img class="imagen" src="./public/images/cuatro_pasajeros.webp" alt="imagen de referencia">
 
             </article>
         </section>
@@ -93,8 +100,8 @@ fecha: fecha del evaluacion de desempeño
         <section class="book">
 
             <!-- lado izquierdo del segundo bloque -->
-            <article class="imagen">
-                <img src="./public/images/conductora.webp" alt="conductora">
+            <article>
+                <img class="imagen" src="./public/images/conductora.webp" alt="conductora">
             </article>
 
             <!-- lado derecho del segundo bloque -->
@@ -152,83 +159,89 @@ fecha: fecha del evaluacion de desempeño
             </article>
         </section>
         <!--------- cuarto bloque de la pagina -------------------------------------------------->
-        <section>
-            <h2>que necesito para ser un conductor Riwi?</h2>
-            <img src="./public/images/conductores.webp" alt="conductores">
-            <article>
+        <section class="need" id="need">
+            <h2>¿que necesito para ser un conductor Riwi?</h2>
+            <img class="img3" src="./public/images/conductores.webp" alt="conductores">
+            <article class="needs">
                 <div>
-                <i class="bi bi-star-fill"></i>
-                <h4>Requisitos</h4>
-                <p>Ser mayor de 18 años</p>
-                <p>Verificación de antecedentes</p>
-                <p>Ser coder de riwi</p>
-            </div>
-            <div>
-                <i class="bi bi-file-earmark-text"></i>
-                <h4>Documentos</h4>
-                <p>Licencia de conducción vigente</p>
-                <p>SOAT vigente</p>
-                <p>Tarjeta de propiedad del vehiculo actual</p>
-            </div>
-            <div>
-                <i class="bi bi-calendar-check-fill"></i>
-                <h4>Empezar es muy facil</h4>
-                <p>Registrate</p>
-                <p>Sube tus documentos</p>
-                <p>Sal a manejar</p>
-            </div>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>Requisitos</h4>
+                    <p>Ser mayor de 18 años</p>
+                    <p>Verificación de antecedentes</p>
+                    <p>Ser coder de riwi</p>
+                </div>
+                <div>
+                    <i class="bi bi-file-earmark-text"></i>
+                    <h4>Documentos</h4>
+                    <p>Licencia de conducción vigente</p>
+                    <p>SOAT vigente</p>
+                    <p>Tarjeta de propiedad del vehiculo actual</p>
+                </div>
+                <div>
+                    <i class="bi bi-calendar-check-fill"></i>
+                    <h4>Empezar es muy facil</h4>
+                    <p>Registrate</p>
+                    <p>Sube tus documentos</p>
+                    <p>Sal a manejar</p>
+                </div>
             </article>
         </section>
         <!---------- quinto bloque de la pagina ----------------------------------------------->
-        <section>
-            <h2>Registrate cuando quieras</h2>
+        <section class="formulario" id="registro">
+            <h3>Registrate cuando quieras</h3>
             <form action="">
-                <input type="text" name="" id="">
-                <input type="email" name="" id="">
-                <input type="tel" name="" id="">
-                <label for=""></label>
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <input class="inputtext" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                <input class="inputtext" type="email" name="correo" id="correo" placeholder="Ingresa tu correo"
+                    required>
+                <input class="inputtext" type="tel" name="tel" id="rel" placeholder="Ingresa tu telefono" required>
+                <select class="inputtext" name="centro" id="centro" required>
+                    <option value="">Selecciona tu centro de formación</option>
+                    <option value="">Medellin</option>
+                    <option value="">Bucaramanga</option>
+                    <option value="">Barranquilla</option>
+                    <option value="">Cali</option>
                 </select>
-                <label for=""></label>
-                <select name="" id=""></select>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Registrate" class="boton">
+                <select class="inputtext" name="" id="" required>
+                    <option value="">Selecciona tu perfil</option>
+                    <option value="">Juan</option>
+                    <option value="">José</option>
+                    <option value="">Maria</option>
+                </select>
+                <textarea class="inputtext" name="coment" id="coment" placeholder="comentarios" required></textarea>
+                <input type="submit" value="Registrate" class="boton binput">
             </form>
         </section>
         <!------------ sexto bloque de la pagina --------------------------------------------->
-        <section>
+        <section class="acerca" id="acerca">
             <h2>Acerca de nosotros</h2>
             <article>
-                <h4>¿quienes somos?</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=U1CpLIRrfGoSfSas"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h4>¿Donde estamos ubicados?</h4>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1389.3816920777483!2d-75.58446808765758!3d6.219035162811139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1712666947135!5m2!1ses-419!2sco"
-                    width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>
+                    <h4>¿quienes somos?</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=U1CpLIRrfGoSfSas"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h4>¿Donde estamos ubicados?</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1389.3816920777483!2d-75.58446808765758!3d6.219035162811139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1712666947135!5m2!1ses-419!2sco"
+                        width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </article>
         </section>
     </main>
+    <!-- --------------------------------------------- -->
     <footer>
-        <section>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-twitter"></i>
+        <section class="iconos">
+            <a href="https://www.facebook.com/p/Riwi-100092420949391/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/riwi.io/?hl=es"><i class="bi bi-instagram"></i></a>
+            <a href="https://co.linkedin.com/company/riwi-io"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/InfoRiwi4424"><i class="bi bi-twitter"></i></a>
         </section>
         <section>
-            <p>@ 2024 Riwi.io Todos los derechos reservados</p>
+            <p>@ 2024 <a href="https://riwi.io">Riwi.io</a> Todos los derechos reservados</p>
         </section>
     </footer>
 
